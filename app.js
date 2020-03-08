@@ -12,7 +12,7 @@ app.get("/", function(req,res){
 })
 
 app.get("/users", function(req,res){
-    res.send("User route");
+    res.send("User routes ");
 })
 
 app.listen(9999,function(){
