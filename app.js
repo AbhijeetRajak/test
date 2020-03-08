@@ -1,9 +1,12 @@
 var express = require("express");
 
-
+var env = require("dotenv"); 
+env.config();
 var app = express();
 
+console.log(process.env);
 
+var PORT = process.env.PORT || 9999;
 app.get("/", function(req,res){
     res.send("Hello World");
 })
